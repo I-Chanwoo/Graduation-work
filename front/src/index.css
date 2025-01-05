@@ -1,13 +1,65 @@
+@font-face {
+  font-family: 'Freesentation';
+  src: url('../public/font/Freesentation-9Black.ttf') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Freesentation';
+  src: url('../public/font/Freesentation-8ExtraBold.ttf') format('woff2');
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Freesentation';
+  src: url('../public/font/Freesentation-7Bold.ttf') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Freesentation';
+  src: url('../public/font/Freesentation-6SemiBold.ttf') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Freesentation';
+  src: url('../public/font/Freesentation-5Medium.ttf') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Freesentation';
+  src: url('../public/font/Freesentation-4Regular.ttf') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Freesentation';
+  src: url('../public/font/Freesentation-3Light.ttf') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Freesentation';
+  src: url('../public/font/Freesentation-2ExtraLight.ttf') format('woff2');
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Freesentation';
+  src: url('../public/font/Freesentation-1Thin.ttf') format('woff2');
+  font-weight: 100;
+  font-style: normal;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Freesentation', -apple-system, BlinkMacSystemFont;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: 'Freesentation', source-code-pro, Menlo, Monaco, Consolas;
 }
