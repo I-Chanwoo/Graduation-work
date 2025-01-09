@@ -8,10 +8,11 @@ const Banner = ({ scrollPosition, maxScroll, imgUrl }) => {
         boxSizing: "border-box",
         width: "100%",
         height: "100vh",
-        backgroundColor: "rgba(255, 255, 255, 0.9)",
+        backgroundColor: "#fbfbfb",
         backgroundImage: `url(${imgUrl})`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
+        backgroundSize: 'contain',
+        backgroundRepeat: 'no-repeat',
+        backgroundPosition: 'left',
         backdropFilter: 'blur(20px)', // 배경 블러 효과
 
         color: "#fbfbfb",
