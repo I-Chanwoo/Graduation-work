@@ -5,8 +5,8 @@ import { FaCartShopping } from "react-icons/fa6"; // Cart icon
 
 const Navbar = () => {
   const navigate = useNavigate();
-  const [headerColor, setHeaderColor] = useState("#fbfbfb"); // 헤더 초기 색상
-  const [color, setColor] = useState("#010101"); // 글 색 초기 색상
+  const [headerColor, setHeaderColor] = useState("var(--background-color)"); // 헤더 초기 색상
+  const [color, setColor] = useState("var(--text-color)"); // 글 색 초기 색상
   const [boxShadow, setBoxShadow] = useState("none"); // 초기 색상
 
 
@@ -14,15 +14,14 @@ const Navbar = () => {
   // 스크롤 위치에 따라 색상 변경
   useEffect(() => {
     const handleScroll = () => {
-
       if (window.scrollY > 70) {
-        setHeaderColor("rgba(1, 1, 1, 0.7)"); // 스크롤이 50px 이상일 때 어두운 색상
-        setColor("#fbfbfb")
-        setBoxShadow("0px 5px 10px rgba(0, 0, 0, 0.2)")
+        setHeaderColor("rgba(5, 15, 19, 0.8)"); // 스크롤이 50px 이상일 때 어두운 색상
+        setColor("var(--background-color)")
+        setBoxShadow("0px 5px 10px rgba(9, 29, 37, 0.2)")
 
       } else {
-        setHeaderColor("#fbfbfb"); // 기본 색상
-        setColor("#010101")
+        setHeaderColor("var(--background-color)"); // 기본 색상
+        setColor("var(--text-color)")
         setBoxShadow("none")
       }
     };
@@ -61,7 +60,7 @@ const Navbar = () => {
           내 히스토리
         </Button>
         &nbsp;&nbsp;&nbsp;
-        <Button color="inherit" variant="outlined">
+        <Button color="inherit" variant="outlined" onClick={() => {navigate("/login")}} >
           로그인
         </Button>
       </Toolbar>

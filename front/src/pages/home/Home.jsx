@@ -18,7 +18,7 @@ function Home() {
   return (
     <Container maxWidth={false}
       style={{
-        backgroundColor: "#FBFBFB",
+        backgroundColor: "var(--background-color)",
         minHeight: "100vh",
         padding: "0 0",
       }}>
